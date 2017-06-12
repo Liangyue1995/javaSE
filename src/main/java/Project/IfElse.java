@@ -4,7 +4,7 @@ package Project;
  * Created by 梁悦 on
  * 2017/6/9.
  */
-public class Exer1 {
+public class IfElse {
     public static void main(String[] args) {
         System.out.print("请输入你的年龄");
         java.util.Scanner s = new java.util.Scanner(System.in);

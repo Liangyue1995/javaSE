@@ -1,4 +1,4 @@
-package Ex;
+package Exercise;
 
 /**
  * Created by 梁悦 on

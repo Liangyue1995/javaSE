@@ -1,4 +1,4 @@
-package Ex;
+package Exercise;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

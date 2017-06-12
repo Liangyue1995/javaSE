@@ -1,6 +1,4 @@
-package Ex;
-
-import javax.swing.*;
+package Exercise;
 
 /**
  * Created by 梁悦 on

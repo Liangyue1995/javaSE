@@ -6,7 +6,7 @@ package Exercises;
  */
 //判断101-200之间有多少个素数，并输出所有素数。
 // 素数：只能被1和它本身整除的正整数（1不是素数）
-public class E1 {
+public class Prime_Number {
     public static void main(String[] args) {
         int counter = 0;
         for (int i = 101; i < 201; i++) {

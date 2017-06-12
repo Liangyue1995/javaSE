@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding: 0;list-style: none}
+        #box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 1px solid #cccccc;
+            margin: 100px auto;
+            -webkit-transform: rotate(0);
+            -webkit-transition: all 5s;
+        }
+        #box:hover{
+            width: 400px;
+            height: 400px;
+            background: green;
+            border: 10px solid yellow;
+            border-radius: 50%;
+            -webkit-transform: rotate(720deg);
+        }
+    </style>
+</head>
+<!--用动画实现一个div原来宽100px、高100px、背景红色、边框是1px灰色边的正方形
+鼠标划过要实现div宽400px、高400px、背景绿色、边框是10px黄色边的圆，
+并且旋转720度。-->
+<body>
+<div id="box"></div>
+</body>
+</html>

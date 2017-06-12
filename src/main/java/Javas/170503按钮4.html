@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding: 0;list-style: none }
+        #box{width: 200px;height: 30px;margin:100px auto;}
+        #box ul li{ width:50px;height:30px;float: left;line-height: 25px;}
+        #box ul li input{position: absolute;opacity: 0;}
+        #box ul li label{
+            display:block;padding-left:30px;
+            background: url("img/按钮4.png") no-repeat;
+            background-position: 0  -25px;}
+        #box ul li input:checked+label{
+            background-position: 0 0;
+        }
+        </style>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li>
+            <input type="radio"id="big1"name="aa">
+            <label for="big1">大</label>
+        </li>
+        <li>
+        <input type="radio"id="big2"name="aa">
+        <label for="big2">中</label>
+        </li>
+        <li>
+        <input type="radio"id="big3"name="aa">
+        <label for="big3">小</label>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

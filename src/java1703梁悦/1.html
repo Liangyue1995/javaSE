@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+        }
+
+        #box {
+            border: 1px solid firebrick;
+            width: 500px;
+            height: 300px;
+            background: orangered;
+        }
+
+        #con {
+            border: 1px solid firebrick;
+            width: 480px;
+            height: 250px;
+            background: white;
+            margin: 30px auto; overflow: hidden;
+        }
+
+        #one {
+            border: 1px solid firebrick;
+            width: 500px;
+            height: 50px;
+            background: green;
+        }
+        #one ul li{
+            float: left; text-align: center;
+            line-height: 50px;color: white;font-family: 微软雅黑;width: 120px;
+        }
+        #two ul{
+            margin: 20px 30px 30px 30px;line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="con">
+        <div id="one">
+            <ul>
+                <li>jquery特效</li>
+                <li>javascript特效</li>
+                <li>div+css教程</li>
+                <li>html5教程</li>
+            </ul>
+        </div>
+        <div id="two">
+            <ul>
+                <li>1111司法解释说法说法是否会哦世界佛 i山东分局山东奋斗</li>
+                <li>1111啊大手大脚撒娇的垃圾似的就啊说大家啊说记得拉手</li>
+                <li>1111另外肯德基啊睡觉的垃圾阿斯顿就啊大家啊说</li>
+                <li>1111的就啊说你多久矮大紧啊撒上大开杀戒啊说啊看</li>
+            </ul>
+            <ul>
+                <li>2222司法解释说法说法是否会哦世界佛 i山东分局山东奋斗</li>
+                <li>2222啊大手大脚撒娇的垃圾似的就啊说大家啊说记得拉手</li>
+                <li>2222另外肯德基啊睡觉的垃圾阿斯顿就啊大家啊说</li>
+                <li>2222的就啊说你多久矮大紧啊撒上大开杀戒啊说啊看</li>
+            </ul>
+            <ul>
+                <li>3333司法解释说法说法是否会哦世界佛 i山东分局山东奋斗</li>
+                <li>3333啊大手大脚撒娇的垃圾似的就啊说大家啊说记得拉手</li>
+                <li>3333另外肯德基啊睡觉的垃圾阿斯顿就啊大家啊说</li>
+                <li>3333的就啊说你多久矮大紧啊撒上大开杀戒啊说啊看</li>
+            </ul>
+            <ul>
+                <li>4444司法解释说法说法是否会哦世界佛 i山东分局山东奋斗</li>
+                <li>4444啊大手大脚撒娇的垃圾似的就啊说大家啊说记得拉手</li>
+                <li>4444另外肯德基啊睡觉的垃圾阿斯顿就啊大家啊说</li>
+                <li>4444的就啊说你多久矮大紧啊撒上大开杀戒啊说啊看</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    var boxs=document.getElementById('box');
+    var cons=document.getElementById('con');
+    var ones=document.getElementById('one').getElementsByTagName('li');
+    var twos=document.getElementById('two').getElementsByTagName('ul');
+    ones[0].onclick=function () {
+        ones[0].style.background='white';
+        ones[1].style.background='';
+        ones[2].style.background='';
+        ones[3].style.background='';
+        ones[0].style.color='black';
+        ones[1].style.color='';
+        ones[2].style.color='';
+        ones[3].style.color='';
+        twos[0].style.display='block';
+        twos[1].style.display='none';
+        twos[2].style.display='none';
+        twos[3].style.display='none';
+    };
+    ones[1].onclick=function () {
+        ones[0].style.background='';
+        ones[1].style.background='white';
+        ones[2].style.background='';
+        ones[3].style.background='';
+        ones[0].style.color='';
+        ones[1].style.color='black';
+        ones[2].style.color='';
+        ones[3].style.color='';
+        twos[0].style.display='none';
+        twos[1].style.display='block';
+        twos[2].style.display='none';
+        twos[3].style.display='none';
+    };
+    ones[2].onclick=function () {
+        ones[0].style.background='';
+        ones[1].style.background='';
+        ones[2].style.background='white';
+        ones[3].style.background='';
+        ones[0].style.color='';
+        ones[1].style.color='';
+        ones[2].style.color='black';
+        ones[3].style.color='';
+        twos[0].style.display='none';
+        twos[1].style.display='none';
+        twos[2].style.display='block';
+        twos[3].style.display='none';
+    };
+    ones[3].onclick=function () {
+        ones[0].style.background='';
+        ones[1].style.background='';
+        ones[2].style.background='';
+        ones[3].style.background='white';
+        ones[0].style.color='';
+        ones[1].style.color='';
+        ones[2].style.color='';
+        ones[3].style.color='black';
+        twos[0].style.display='none';
+        twos[1].style.display='none';
+        twos[2].style.display='none';
+        twos[3].style.display='block';
+    }
+</script>
+</body>
+</html>

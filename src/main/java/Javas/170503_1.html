@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0;padding: 0;list-style: none;}
+        #box{width: 700px;height: 320px;border: 1px solid blue;margin: 10px 50px;position: relative;
+                overflow: hidden;}
+        #box img{float: left;}
+        #new{position: absolute;right: 10px;bottom: 10px;float: right}
+        #new li{float: left;width: 18px;height: 18px;border: 1px solid white;line-height: 18px;
+            text-align: center}
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <img src="img/1.jpg" height="320" width="700"/>
+    <img src="img/2.jpg" height="320" width="700"/>
+    <img src="img/3.jpg" height="320" width="700"/>
+    <ol id="new">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+</div>
+<script>
+    var imgs=document.getElementById('box').getElementsByTagName('img');
+    var news=document.getElementById('new').getElementsByTagName('li');
+        var k=0;//添加定时器
+        function anot() {
+            for(var j=0;j<imgs.length;j++){//循环出所有图片
+                imgs[j].style.display='none';
+                news[j].style.background='';
+            }
+            imgs[k].style.display='block';
+            news[k].style.background='red';
+            k++;
+            if(k>imgs.length-1){
+                k=0;
+            }
+        }
+       a=setInterval(anot,1000);
+
+    for(var i=0;i<news.length;i++){//循环出所有数字
+        news[i].index=i;//所有数字的索引
+        news[i].onmouseover=function () {//添加划过事件
+            clearInterval(a);
+            for(var j=0;j<imgs.length;j++){//循环出所有图片
+                imgs[j].style.display='none';
+                news[j].style.background='';
+            }
+            imgs[this.index].style.display='block';
+            news[this.index].style.background='red';
+        };
+           news[i].onmouseout=function () {
+               k = this.index;
+               a=setInterval(anot,1000);
+           }
+    }
+</script>
+
+</body>
+</html>

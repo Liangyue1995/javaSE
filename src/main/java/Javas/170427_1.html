@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        #box1{
+            background:blue;
+            -webkit-animation: box1 1.5s linear infinite alternate;
+        }
+        #box2{
+            background: orangered;
+            -webkit-animation: box2 1.5s linear infinite alternate;
+        }
+        @-webkit-keyframes box1 {
+           0%{-webkit-transform:translateX(0px)}
+            25%{-webkit-transform:translateX(400px)}
+            50%{-webkit-transform:translate(400px,400px)}
+            75%{-webkit-transform:translateY(400px)}
+            100%{-webkit-transform:translateY(0)}
+        }
+        @-webkit-keyframes box2{
+            0%{-webkit-transform:translateY(0px)}
+            25%{-webkit-transform:translateY(400px)}
+            50%{-webkit-transform:translate(400px,400px)}
+            75%{-webkit-transform:translateX(400px)}
+            100%{-webkit-transform:translateX(0)}
+        }
+    </style>
+</head>
+<body>
+<div id="box1">
+    <p>技术帝啊宿舍分公司的书的胡飒的哈哈数据库的好实施</p>
+</div>
+<div id="box2"></div>
+</body>
+</html>

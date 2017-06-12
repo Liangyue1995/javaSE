@@ -1,0 +1,22 @@
+*{margin: 0;padding: 0;list-style: none}
+#box1{
+width: 155px;
+    height: 33px;
+     margin: 100px auto;
+}
+#box1 input{
+position: absolute;
+    opacity: 0;
+}
+#box1 label{
+    width: 78px;
+    height: 27px;
+    display: block;
+    border-radius: 15px;
+    background: url("../img/开关按钮.png");
+    background-position: -52px 0;
+    -webkit-transition: all 1s;
+}
+#box1 input:checked+label{
+    background-position: 0 0;
+}

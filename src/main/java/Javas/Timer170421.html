@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="box">
+        <p id="names"></p>
+        <button id="begin">开始</button>
+        <button id="suspend">暂停</button>
+    </div>
+    <script>
+        var names=document.getElementById('names');
+            begin=document.getElementById('begin');
+            suspend=document.getElementById('suspend');
+        var q =['五','四','三','二','一'];
+            i=0;
+            function z() {
+                names.innerHTML=q[i];
+                i++;
+                if (i>q.length-1) {
+                    i=0;
+                }
+            }
+            begin.onclick=function () {
+                sl=setInterval(z,200);
+                begin.disabled='disabled';
+            };
+            suspend.onclick=function () {
+                clearInterval(sl);
+               begin.disabled=''
+            }
+    </script>
+</body>
+</html>

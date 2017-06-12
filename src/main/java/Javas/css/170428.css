@@ -1,0 +1,36 @@
+*{margin: 0;padding: 0;list-style: none}
+#box{
+    width: 168px;
+    height: 42px;
+    background: #cccccc;
+    margin: 100px auto;
+}
+#box a{
+    width: 42px;
+    height: 42px;
+    display:block;
+    float: left;
+    background:url("../img/QQ图片20170428090048.png");
+    -webkit-transition: all 1s;
+}
+#box a:nth-child(2){
+    background-position: -42px 0;
+}
+#box a:nth-child(3){
+    background-position: -84px 0;
+}
+#box a:nth-child(4){
+    background-position: -128px 0;
+}
+#box a:hover{
+ background-position: 0 -42px;
+}
+#box a:nth-child(2):hover{
+    background-position: -42px -42px;
+}
+#box a:nth-child(3):hover{
+    background-position: -84px -42px;
+}
+#box a:nth-child(4):hover{
+    background-position: -128px -42px;
+}

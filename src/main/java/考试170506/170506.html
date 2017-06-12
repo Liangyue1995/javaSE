@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;list-style: none}
+ #box{width: 820px;height: 462px;border: 1px solid red;margin: 50px auto;overflow: hidden }
+ #box img{float: left}
+ #new{position: absolute;top: 480px;left: 550px;}
+  #new li{width: 15px;height: 15px;background: #cccccc;float: left;border-radius: 50%;
+            margin-left: 4px;}
+</style>
+<body>
+<div id="box">
+    <img src="images/1.jpg" height="461" width="820"/>
+    <img src="images/2.jpg" height="461" width="820"/>
+    <img src="images/3.jpg" height="461" width="820"/>
+    <img src="images/4.jpg" height="461" width="820"/>
+    <img src="images/5.jpg" height="461" width="820"/>
+    <img src="images/6.jpg" height="461" width="820"/>
+    <ul id="new">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+<script>
+    var imgs=document.getElementById('box').getElementsByTagName('img');
+    var news=document.getElementById('new').getElementsByTagName('li');
+    var k=0;
+    function anot() {
+        for(var j=0;j<imgs.length;j++){
+            imgs[j].style.display='none';
+            news[j].style.background='';
+        }
+        imgs[k].style.display='block';
+        news[k].style.background='red';
+        k++;
+        if(k>imgs.length-1){
+            k=0;
+        }
+    }
+    a=setInterval(anot,1000);
+    for(var i=0;i<news.length;i++){
+        news[i].index=i;
+        news[i].onmouseover=function () {
+           clearInterval(a);
+            for(var j=0;j<imgs.length;j++){
+                imgs[j].style.display='none';
+                news[j].style.background='';
+            }
+            imgs[this.index].style.display='block';
+            news[this.index].style.background='red';
+        };
+    news[i].onmouseout=function () {
+        k = this.index;
+        a=setInterval(anot,1000);
+         }
+    }
+</script>
+</html>

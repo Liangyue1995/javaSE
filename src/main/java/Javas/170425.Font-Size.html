@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="p" style="font-size: 18px; color: red">在过去的一年里，软件开发行业继续大踏步地向前迈进。回顾 2016 年，
+        我们看到了更多新兴的流行语言、框架和工具，它们改变着我们的工作方式，
+        让我们看到更多的可能。但在这个行业，紧随潮流是很难的。所以在每年年底
+        ，我们都会给你提供一些建议，它涉及什么是最重要的，
+        以及你在未来一年中应该学习什么。 大趋势 渐进式 Web Apps 在 201...</p>
+<input type="button"value="放大" id="big">
+<input type="button"value="缩小" id="small">
+</body>
+<script>
+    var p=document.getElementById('p');
+     var   big=document.getElementById('big');
+      var  small=document.getElementById('small');
+    big.onclick=function () {
+         var size=parseInt(p.style.fontSize);
+         size+=2;
+         p.style.fontSize=size+"px";
+        };
+    small.onclick=function () {
+        var size=parseInt(p.style.fontSize);
+        size-=2;
+        p.style.fontSize=size+"px";
+    }
+</script>
+</html>

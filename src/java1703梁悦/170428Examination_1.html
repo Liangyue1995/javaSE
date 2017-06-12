@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0;padding: 0; list-style: none}
+        #box{
+            width: 820px;
+            height: 461px;
+            border: 1px solid red;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #img {
+            width: 9240px;
+            height: 461px;
+        }
+        #img  li {
+            width: 820px;
+            height: 320px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul id="img">
+    <li><img src="img/11.jpg" height="461" width="820"/></li>
+    <li><img src="img/12.jpg" height="461" width="820"/></li>
+    <li><img src="img/13.jpg" height="461" width="820"/></li>
+    <li><img src="img/14.jpg" height="461" width="820"/></li>
+    <li><img src="img/15.jpg" height="461" width="820"/></li>
+    <li><img src="img/16.jpg" height="461" width="820"/></li>
+    <li><img src="img/17.jpg" height="461" width="820"/></li>
+    <li><img src="img/18.jpg" height="461" width="820"/></li>
+    <li><img src="img/19.jpg" height="461" width="820"/></li>
+     <li><img src="img/21.jpg" height="461" width="820"/></li>
+    <li><img src="img/22.jpg" height="461" width="820"/></li>
+    </ul>
+</div>
+<script>
+    var box=document.getElementById('box');
+    var img=document.getElementById('img');
+    function aa() {
+        var z = parseInt(img.style.marginLeft);
+        if (!z) {
+            z=0;
+        }
+        if (z>-8200) {
+            img.style.marginLeft =z-1+'px';
+        } else
+            img.style.marginLeft=0;
+    }
+    setInterval(aa,0)
+</script>
+</body>
+</html>

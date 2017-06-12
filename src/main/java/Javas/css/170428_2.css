@@ -1,0 +1,20 @@
+*{margin: 0;padding: 0;list-style: none}
+#big{
+    width:40px;
+    height: 40px;
+    margin: 100px auto;
+}
+#big input{
+    position: absolute;
+    opacity: 0;
+}
+#big label{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url("../img/选中按钮1.png") no-repeat;
+
+}
+#big input:checked+label{
+    background: url("../img/选中按钮2.png") no-repeat;
+}

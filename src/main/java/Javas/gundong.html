@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;padding: 0;list-style: none;
+        }
+        #box {
+            width: 700px;
+            height: 320px;
+            margin: 100px auto;
+            background: red;
+            overflow: hidden;
+        }
+        #img {
+            width: 2100px;
+            height: 320px;
+
+        }
+        #img li{
+            width: 700px;
+            height: 100px;
+            float: left;
+
+        }
+    </style>
+</head>
+<body>
+<div id="box" >
+    <ul id="img">
+        <li><img src="img/1.jpg" height="320" width="700"/></li>
+        <li><img src="img/2.jpg" height="320" width="700"/></li>
+        <li><img src="img/3.jpg" height="320" width="700"/></li>
+    </ul>
+</div>
+<script>
+    var img=document.getElementById('img');
+        function aa() {
+            var cf=parseInt(img.style.marginLeft);
+            if(!cf) {
+                cf=0;
+            }
+            if (cf>-1400) {
+                img.style.marginLeft=cf-1+'px';
+            }else
+            img.style.marginLeft=0;
+        }
+        setInterval(aa,0)
+
+</script>
+</body>
+</html>

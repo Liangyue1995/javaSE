@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box"style="width: 400px;height: 400px;background: orange">
+    <p id="p">您好</p>
+</div>
+<input type="radio"id="bon1" name="1">蓝色
+<input type="radio" id="bon2" name="1">红色
+<input type="radio" id="bon3" name="1">绿色
+<input type="button"value="点击" id="z">
+<script>
+var box=document.getElementById('box'),
+    p=document.getElementById('p'),
+    bon1=document.getElementById('bon1'),
+    bon2=document.getElementById('bon2'),
+    bon3=document.getElementById('bon3'),
+    z=document.getElementById('z');
+     z.onclick=function () {
+         if(bon1.checked){
+          box.style.background='blue';
+             p.style.color='red'
+         }else if(bon2.checked){
+             box.style.background='red';
+             p.style.color='green'
+         }else  if(bon3.checked){
+             box.style.background='green';
+             p.style.color='blue'
+         }
+     };
+    //for(i=1;i<=9;i++){
+      //   for(j=1;j<=i;j++){
+        //     document.write(j+"*"+i+"="+i*j+"&nbsp;")
+         //}document.write("<br/>")
+    //
+</script>
+</body>
+</html>

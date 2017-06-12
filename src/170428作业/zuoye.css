@@ -1,0 +1,41 @@
+*{
+    margin: 0;padding: 0;list-style: none;
+}
+#box{  width: 983px;  height: 4669px;  border: 1px solid red;  float: left;  margin: 50px  50px;  }
+#box1{  height: 51px;  }
+#box1 p{  float: left;  }
+#box1 ul{  float:left;  margin-left: 15px;  }
+#box1 ul li{  float: left;  margin-left: 5px;  }
+#box2{  margin:0 auto;  }
+#box2 ul{  float: left;  margin-left: 25px;  margin-top: 10px;  }
+#box2 ul li {  float: left;  margin-left: 20px;  }
+#box3{  height: 60px;  background:orange ;  }
+#box4{  width: 352px;  height: 384px;  border: 1px solid chartreuse;  float: left;  }
+#box4 p{  text-indent: 2em;  color:gray ;  border-bottom: 1px dotted ;  }
+#box4 h3{  line-height: 50px;  text-align:center;  }
+#box4 p a {  text-decoration: none;  }
+#box4 ul li{  line-height: 30px;  margin-left: 10px;  }
+#box5{  float: left;  }
+#box5_1{  width: 623px;  height: 105px;  border:1px solid orange;  float: left;  }
+#box5_1 ul{  float: left;  margin-left: 10px;  line-height: 105px;  }
+#box5_1 ul li{  line-height: 25px;  font-size: 15px;  }
+#box7{  width: 462px;  height: 259px;  border: 1px solid orchid;  float: left;  }
+#box7_1{  height: 32px;  background: pink;  }
+#box7_1 h4{  line-height: 32px;  margin-left: 20px;  float: left;  }
+#box7_1 a{  float: right;  text-decoration: none;  line-height: 32px;  margin-right: 20px;  }
+#box7_2 img{  margin-top: 20px;  float: left;  }
+#box7_2 ul{  float: left;  line-height: 30px;  }
+#box7_2 ul li {  height: 17px;  margin-top: 8px;  margin-left: 20px;  }
+#box7_2_1{  width: 220px;  height: 180px;  border: 1px solid red;  float: left;  margin:2px 5px;  }
+#box7_2_2{  height: 32px;  background: #cccccc;  }
+#box7_2_2 h4{  line-height: 32px;  margin-left: 20px;  float: left;  }
+#box7_2_2 a{  float: right;  text-decoration: none;  line-height: 32px;  margin-right: 20px;  }
+#box7_2_1 ul li{  margin-top: 7px;  font-size: 14px;  }
+#box7_3{  width: 280px;  height: 300px;  border: 1px solid red;  float: right;  margin-right: 5px;  }
+#box7_3_1{  height: 32px;background: orange  }
+#box7_3_1 h4{  line-height: 32px;  margin-left: 20px;  float: left;  }
+#box7_3_1 a{  float: right;  text-decoration: none;  line-height: 32px;  margin-right: 20px;  }
+#box7_3 ul {float: left;margin-left: 5px;}
+#box7_3 ul dd{color: lightgray}
+#box7_3 li {line-height: 25px;}
+#box8{  margin: 5px 5px ; }
